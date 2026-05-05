@@ -9,8 +9,14 @@ datasource db {
 
 }
 
+Generate
 generator client {
   provider = "prisma-client-js"
+  output = "../generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
 }
 
 // Modelo de Tarefa
